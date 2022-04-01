@@ -44,7 +44,7 @@ public class AlarmController {
 			am = false;
 		}
 		if(!am) {
-			alarmMinute = alarmMinute + 12;
+			alarmHour = alarmHour + 12;
 		}
 		Date currentDate = new Date();
 		Date alarmDate = new Date();
