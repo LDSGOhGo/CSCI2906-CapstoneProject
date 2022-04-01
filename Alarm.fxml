@@ -10,7 +10,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AlarmController">
    <children>
-      <Label layoutX="239.0" layoutY="14.0" prefHeight="84.0" prefWidth="123.0" text="Set Your Alarm">
+      <Label layoutX="239.0" layoutY="14.0" prefHeight="84.0" prefWidth="123.0" text="Set Your Alarm" fx:id="label1">
          <font>
             <Font size="18.0" />
          </font>
@@ -33,7 +33,7 @@
             </FXCollections>
          </items>
       </ChoiceBox>
-      <Label layoutX="174.0" layoutY="102.0" text="Hour" />
+      <Label layoutX="174.0" layoutY="102.0" text="Hour" fx:id="label2"/>
       <ChoiceBox fx:id="minute" layoutX="225.0" layoutY="149.0" prefWidth="150.0" value="30">
       <items>
          <FXCollections fx:factory="observableArrayList">
@@ -52,8 +52,8 @@
          </FXCollections>
       </items>
       </ChoiceBox>
-      <Label layoutX="168.0" layoutY="153.0" text="Minute" />
-      <Label layoutX="166.0" layoutY="205.0" text="AM/PM" />
+      <Label layoutX="168.0" layoutY="153.0" text="Minute" fx:id="label3"/>
+      <Label layoutX="166.0" layoutY="205.0" text="AM/PM" fx:id="label4"/>
       <ChoiceBox fx:id="ampm" layoutX="225.0" layoutY="201.0" prefWidth="150.0" value="AM">
       <items>
          <FXCollections fx:factory="observableArrayList">
@@ -62,8 +62,8 @@
          </FXCollections>
       </items>
       </ChoiceBox>
-      <Label layoutX="166.0" layoutY="257.0" text="Difficulty" />
-      <ChoiceBox layoutX="226.0" layoutY="253.0" prefWidth="150.0" value="Easy">
+      <Label layoutX="166.0" layoutY="257.0" text="Difficulty" fx:id="label5"/>
+      <ChoiceBox layoutX="226.0" layoutY="253.0" prefWidth="150.0" value="Easy" fx:id="difficulty">
       <items>
          <FXCollections fx:factory="observableArrayList">
             <String fx:value="Easy" />
@@ -72,7 +72,7 @@
          </FXCollections>
       </items>
       </ChoiceBox>
-      <Button layoutX="273.0" layoutY="299.0" mnemonicParsing="false" text="Start" onMouseClicked="#onStart"/>
+      <Button layoutX="273.0" layoutY="299.0" mnemonicParsing="false" text="Start" onMouseClicked="#onStart" fx:id="start"/>
       <Button layoutX="498.0" layoutY="361.0" mnemonicParsing="false" text="Military Time" onMouseClicked="#militaryToggle" fx:id="militaryButton"/>
    </children>
 </Pane>
