@@ -26,31 +26,43 @@ public class PuzzleController {
 		Random rand = new Random();
 		int puzzleInt = rand.nextInt((3 - 0) + 1) + 0;
 		for(int i = 0; i < 4; i++) {
-			for(int j = 0; j < 4; j++) {
-				if(puzzles[puzzleInt][j] == puzzles[0][i]) {
-					colors[j] = ref[i];
-				}
+			if(puzzles[puzzleInt][i] == 'R') {
+				Thread t = new Thread(() -> {
+					Platform.runLater(() -> red.setStyle("-fx-border-color: red; -fx-border-width: 5px; -fx-background-color: red;"));
+					try {
+						Thread.sleep(2500);
+					} catch(InterruptedException ex) {
+						System.out.println(ex.toString());
+					}
+				});
+			} else if(puzzles[puzzleInt][i] == 'Y') {
+				Thread t = new Thread(() -> {
+					Platform.runLater(() -> yellow.setStyle("-fx-border-color: yellow; -fx-border-width: 5px; -fx-background-color: yellow;"));
+					try {
+						Thread.sleep(2500);
+					} catch(InterruptedException ex) {
+						System.out.println(ex.toString());
+					}
+				});
+			} else if(puzzles[puzzleInt][i] == 'G') {
+				Thread t = new Thread(() -> {
+					Platform.runLater(() -> green.setStyle("-fx-border-color: green; -fx-border-width: 5px; -fx-background-color: green;"));
+					try {
+						Thread.sleep(2500);
+					} catch(InterruptedException ex) {
+						System.out.println(ex.toString());
+					}
+				});
+			} else {
+				Thread t = new Thread(() -> {
+					Platform.runLater(() -> blue.setStyle("-fx-border-color: blue; -fx-border-width: 5px; -fx-background-color: blue;"));
+					try {
+						Thread.sleep(2500);
+					} catch(InterruptedException ex) {
+						System.out.println(ex.toString());
+					}
+				});
 			}
-		}
-		try {
-			for(int i = 0; i < 4; i++) {
-				System.out.println("run");
-				if(colors[i] == red) {
-					red.setStyle("-fx-border-color: red; -fx-border-width: 5px; -fx-background-color: red; -fx-background-insets: 5;");
-					Thread.sleep(2500);
-				} else if(colors[i] == yellow) {
-					yellow.setStyle("-fx-border-color: yellow; -fx-border-width: 5px; -fx-background-color: yellow; -fx-background-insets: 5;");
-					Thread.sleep(2500);
-				} else if(colors[i] == green) {
-					green.setStyle("-fx-border-color: green; -fx-border-width: 5px; -fx-background-color: green; -fx-background-insets: 5;");
-					Thread.sleep(2500);
-				} else {
-					blue.setStyle("-fx-border-color: blue; -fx-border-width: 5px; -fx-background-color: blue; -fx-background-insets: 5;");
-					Thread.sleep(2500);
-				}
-			}
-		} catch(InterruptedException ex) {
-			System.out.println(ex.toString());
 		}
 	}
 }
