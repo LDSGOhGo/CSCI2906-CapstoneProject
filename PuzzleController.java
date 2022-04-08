@@ -8,6 +8,9 @@ import java.text.*;
 import java.util.TimerTask;
 import javafx.application.*;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.*;
+import javafx.animation.*;
+import javafx.util.Duration;
 
 public class PuzzleController {
 	@FXML
@@ -25,44 +28,26 @@ public class PuzzleController {
 	protected void onStart() {
 		Random rand = new Random();
 		int puzzleInt = rand.nextInt((3 - 0) + 1) + 0;
+		final Timeline timeline = new Timeline();
 		for(int i = 0; i < 4; i++) {
 			if(puzzles[puzzleInt][i] == 'R') {
-				Thread t = new Thread(() -> {
-					Platform.runLater(() -> red.setStyle("-fx-border-color: red; -fx-border-width: 5px; -fx-background-color: red;"));
-					try {
-						Thread.sleep(2500);
-					} catch(InterruptedException ex) {
-						System.out.println(ex.toString());
-					}
-				});
+				timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(2), event -> {
+					red.setStyle("-fx-border-color: red; -fx-border-width: 5px; -fx-background-color: red; -fx-background-insets: 5;");
+				}));
 			} else if(puzzles[puzzleInt][i] == 'Y') {
-				Thread t = new Thread(() -> {
-					Platform.runLater(() -> yellow.setStyle("-fx-border-color: yellow; -fx-border-width: 5px; -fx-background-color: yellow;"));
-					try {
-						Thread.sleep(2500);
-					} catch(InterruptedException ex) {
-						System.out.println(ex.toString());
-					}
-				});
+				timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(2), event -> {
+					yellow.setStyle("-fx-border-color: yellow; -fx-border-width: 5px; -fx-background-color: yellow; -fx-background-insets: 5;");
+				}));
 			} else if(puzzles[puzzleInt][i] == 'G') {
-				Thread t = new Thread(() -> {
-					Platform.runLater(() -> green.setStyle("-fx-border-color: green; -fx-border-width: 5px; -fx-background-color: green;"));
-					try {
-						Thread.sleep(2500);
-					} catch(InterruptedException ex) {
-						System.out.println(ex.toString());
-					}
-				});
+				timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(2), event -> {
+					green.setStyle("-fx-border-color: green; -fx-border-width: 5px; -fx-background-color: green; -fx-background-insets: 5;");
+				}));
 			} else {
-				Thread t = new Thread(() -> {
-					Platform.runLater(() -> blue.setStyle("-fx-border-color: blue; -fx-border-width: 5px; -fx-background-color: blue;"));
-					try {
-						Thread.sleep(2500);
-					} catch(InterruptedException ex) {
-						System.out.println(ex.toString());
-					}
-				});
+				timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(2), event -> {
+					blue.setStyle("-fx-border-color: blue; -fx-border-width: 5px; -fx-background-color: blue; -fx-background-insets: 5;");
+				}));
 			}
 		}
+		timeline.play();
 	}
 }
