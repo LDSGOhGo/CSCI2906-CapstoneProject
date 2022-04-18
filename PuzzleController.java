@@ -17,7 +17,7 @@ public class PuzzleController {
 	@FXML
 	Pane red, yellow, green, blue;
 	@FXML
-	Button submit, skip;
+	Button submit, skip, start;
 	@FXML
 	ChoiceBox redChoice, yellowChoice, greenChoice, blueChoice;
 	@FXML
@@ -115,6 +115,7 @@ public class PuzzleController {
 			colors[3].getWidth() - colors[3].getWidth() / 5, colors[3].getHeight() - 20
 		});
 		colors[3].getChildren().addAll(triangle);
+		start.setDisable(true);
 	}
 	@FXML
 	protected void onSubmit() {

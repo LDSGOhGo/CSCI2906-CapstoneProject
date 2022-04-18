@@ -7,6 +7,8 @@ import java.time.LocalTime;
 import java.text.*;
 import java.util.TimerTask;
 import javafx.application.*;
+import java.io.*;
+import javafx.stage.*;
 
 public class AlarmController {
 	@FXML
@@ -48,8 +50,18 @@ public class AlarmController {
 		}
 		Date currentDate = new Date();
 		Date alarmDate = new Date();
-		if(alarmHour >= currentDate.getHours() && alarmMinute > currentDate.getMinutes()) {
-			alarmDate = new Date(currentDate.getYear(), currentDate.getMonth(), currentDate.getDate(), alarmHour, alarmMinute, 0);
+		if(alarmHour >= currentDate.getHours()) {
+			if(alarmHour == currentDate.getHours()) {
+				if(alarmMinute > currentDate.getMinutes()) {
+					alarmDate = new Date(currentDate.getYear(), currentDate.getMonth(), currentDate.getDate(), alarmHour, alarmMinute, 0);
+				}
+				else {
+					alarmDate = new Date(currentDate.getYear(), currentDate.getMonth(), currentDate.getDate() + 1, alarmHour, alarmMinute, 0);
+				}
+			}
+			else {
+				alarmDate = new Date(currentDate.getYear(), currentDate.getMonth(), currentDate.getDate(), alarmHour, alarmMinute, 0);
+			}
 		}
 		else {
 			alarmDate = new Date(currentDate.getYear(), currentDate.getMonth(), currentDate.getDate() + 1, alarmHour, alarmMinute, 0);
@@ -74,6 +86,12 @@ public class AlarmController {
 		public void run() {
 			Platform.runLater(() -> {
 				label1.setText("Alarm goes off");
+				try {
+					Runtime.getRuntime().exec("java Puzzle");
+				}
+				catch(IOException e) {
+					System.exit(0);
+				}
 			});
 		}
 	}

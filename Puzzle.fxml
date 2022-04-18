@@ -78,7 +78,7 @@
          <children>
             <Label layoutX="126.0" layoutY="67.0" text="Incorrect" textFill="#e10404" visible="false" fx:id="incorrect"/>
             <Button disable="true" layoutX="129.0" layoutY="94.0" mnemonicParsing="false" text="Skip" fx:id="skip" onMouseClicked="#onSkip"/>
-            <Button layoutX="128.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onStart" text="Start" />
+            <Button layoutX="128.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onStart" text="Start" fx:id="start"/>
             <Button layoutY="107.0" mnemonicParsing="false" text="Submit" disable="true" fx:id="submit" onMouseClicked="#onSubmit"/>
          </children>
       </Pane>
