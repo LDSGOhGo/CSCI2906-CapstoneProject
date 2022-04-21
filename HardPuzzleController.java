@@ -19,11 +19,12 @@ public class HardPuzzleController {
 	@FXML
 	List<Pane> blocks;
 	@FXML
-	Button start;
+	Button start, skip;
 	String[] colors = {"black; ", "green; ", "blue; ", "red; ", "yellow; ", "orange; "};
 	Random random = new Random();
 	int redCount = 0;
-	List<Pane> redBlocks;
+	int missCount = 0;
+	List<Pane> redBlocks = new ArrayList<Pane>();
 	
 	@FXML
 	protected void onStart() {
@@ -31,13 +32,13 @@ public class HardPuzzleController {
 			int color = random.nextInt(5);
 			if(colors[color].equals("red; ")) {
 				redCount++;
-				//redBlocks.add(blocks.get(i));
+				Pane red = blocks.get(i);
+				redBlocks.add(red);
 			}
 			String style = "-fx-background-color: " + colors[color] + "-fx-border-color: black;";
 			blocks.get(i).setStyle(style);
 			start.setDisable(true);
 		}
-		System.out.println(redCount);
 	}
 	@FXML
 	protected void onClick(MouseEvent event) {
@@ -52,9 +53,20 @@ public class HardPuzzleController {
 			pane.getChildren().addAll(one, two);
 			redCount--;
 			pane.setDisable(true);
+			if(redCount == 0) {
+				System.exit(0);
+			}
 		}
 		else {
+			missCount++;
+			if(missCount >= 5) {
+				skip.setDisable(false);
+			}
 			return;
 		}
+	}
+	@FXML
+	protected void onSkip() {
+		System.exit(0);
 	}
 }

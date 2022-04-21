@@ -85,12 +85,25 @@ public class AlarmController {
 	private class MyTimeTask extends TimerTask {
 		public void run() {
 			Platform.runLater(() -> {
+				String diff = difficulty.getValue().toString();
 				label1.setText("Alarm goes off");
-				try {
-					Runtime.getRuntime().exec("java Puzzle");
+				if(diff.equals("Easy")) {
+					try {
+						Runtime.getRuntime().exec("java Puzzle");
+						Platform.exit();
+					}
+					catch(IOException e) {
+						System.exit(0);
+					}
 				}
-				catch(IOException e) {
-					System.exit(0);
+				else {
+					try {
+						Runtime.getRuntime().exec("java HardPuzzle");
+						Platform.exit();
+					}
+					catch(IOException e) {
+						System.exit(0);
+					}
 				}
 			});
 		}
