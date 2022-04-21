@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import java.util.ArrayList?>
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="HardPuzzleController">
   <columnConstraints>
@@ -91,11 +92,67 @@
             <Pane layoutX="470.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="3" fx:id="xx"/>
             <Pane layoutX="516.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="3" fx:id="yy"/>
             <Pane layoutX="563.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" fx:id="zz"/>
+            <fx:define>
+              <ArrayList fx:id="blocks">
+                <fx:reference source="aaa" />
+                <fx:reference source="a" />
+                <fx:reference source="b" />
+                <fx:reference source="c" />
+                <fx:reference source="d" />
+                <fx:reference source="e" />
+                <fx:reference source="f" />
+                <fx:reference source="g" />
+                <fx:reference source="h" />
+                <fx:reference source="i" />
+                <fx:reference source="j" />
+                <fx:reference source="k" />
+                <fx:reference source="l" />
+                <fx:reference source="m" />
+                <fx:reference source="n" />
+                <fx:reference source="o" />
+                <fx:reference source="p" />
+                <fx:reference source="q" />
+                <fx:reference source="s" />
+                <fx:reference source="t" />
+                <fx:reference source="u" />
+                <fx:reference source="v" />
+                <fx:reference source="w" />
+                <fx:reference source="x" />
+                <fx:reference source="y" />
+                <fx:reference source="z" />
+                <fx:reference source="aa" />
+                <fx:reference source="bb" />
+                <fx:reference source="cc" />
+                <fx:reference source="dd" />
+                <fx:reference source="ee" />
+                <fx:reference source="ff" />
+                <fx:reference source="gg" />
+                <fx:reference source="hh" />
+                <fx:reference source="ii" />
+                <fx:reference source="jj" />
+                <fx:reference source="kk" />
+                <fx:reference source="ll" />
+                <fx:reference source="mm" />
+                <fx:reference source="nn" />
+                <fx:reference source="oo" />
+                <fx:reference source="pp" />
+                <fx:reference source="qq" />
+                <fx:reference source="rr" />
+                <fx:reference source="ss" />
+                <fx:reference source="tt" />
+                <fx:reference source="uu" />
+                <fx:reference source="vv" />
+                <fx:reference source="ww" />
+                <fx:reference source="xx" />
+                <fx:reference source="yy" />
+                <fx:reference source="zz" />
+              </ArrayList>
+            </fx:define>
          </children>
       </GridPane>
       <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
          <children>
-            <Button layoutX="273.0" layoutY="88.0" mnemonicParsing="false" text="Start" onMouseClicked="#onStart"/>
+            <Button layoutX="273.0" layoutY="88.0" mnemonicParsing="false" text="Start" onMouseClicked="#onStart" fx:id="start"/>
             <Label layoutX="14.0" layoutY="14.0" text="Click on all of the red boxes to turn off the alarm." />
             <Label layoutX="14.0" layoutY="31.0" text="Press the start button to begin." />
             <Button disable="true" layoutX="274.0" layoutY="149.0" mnemonicParsing="false" text="Skip" />
@@ -103,3 +160,4 @@
       </Pane>
    </children>
 </GridPane>
+
