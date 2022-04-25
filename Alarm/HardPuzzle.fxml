@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import java.util.ArrayList?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="HardPuzzleController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;  -fx-border-color: black;" GridPane.columnIndex="1" fx:id="aaa" onMouseClicked="#onClick"/>
+            <Pane layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="1" fx:id="a" onMouseClicked="#onClick"/>
+            <Pane layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="b" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.rowIndex="1" fx:id="c" onMouseClicked="#onClick"/>
+            <Pane layoutX="60.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="3" fx:id="d" onMouseClicked="#onClick"/>
+            <Pane layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="e" onMouseClicked="#onClick"/>
+            <Pane layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="4" fx:id="f" onMouseClicked="#onClick"/>
+            <Pane layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="2" fx:id="g" onMouseClicked="#onClick"/>
+            <Pane layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="h" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="1" fx:id="i" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="5" fx:id="j" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="1" fx:id="k" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="1" fx:id="l" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="6" fx:id="m" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="7" fx:id="n" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="1" fx:id="o" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="8" fx:id="p" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="8" GridPane.rowIndex="1" fx:id="q" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="9" fx:id="s" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="10" fx:id="t" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="11" fx:id="u" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="12" fx:id="v" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="9" GridPane.rowIndex="1" fx:id="w" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="10" GridPane.rowIndex="1" fx:id="x" onMouseClicked="#onClick"/>
+            <Pane layoutX="516.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="1" fx:id="y" onMouseClicked="#onClick"/>
+            <Pane layoutX="563.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.rowIndex="2" fx:id="z" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="aa" onMouseClicked="#onClick"/>
+            <Pane layoutX="56.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="bb" onMouseClicked="#onClick"/>
+            <Pane layoutX="102.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="cc" onMouseClicked="#onClick"/>
+            <Pane layoutX="148.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="2" fx:id="dd" onMouseClicked="#onClick"/>
+            <Pane layoutX="194.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="2" fx:id="ee" onMouseClicked="#onClick"/>
+            <Pane layoutX="240.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="2" fx:id="ff" onMouseClicked="#onClick"/>
+            <Pane layoutX="286.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="2" fx:id="gg" onMouseClicked="#onClick"/>
+            <Pane layoutX="332.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="8" GridPane.rowIndex="2" fx:id="hh" onMouseClicked="#onClick"/>
+            <Pane layoutX="378.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="9" GridPane.rowIndex="2" fx:id="ii" onMouseClicked="#onClick"/>
+            <Pane layoutX="424.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="10" GridPane.rowIndex="2" fx:id="jj" onMouseClicked="#onClick"/>
+            <Pane layoutX="470.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="2" fx:id="kk" onMouseClicked="#onClick"/>
+            <Pane layoutX="516.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="2" fx:id="ll" onMouseClicked="#onClick"/>
+            <Pane layoutX="563.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.rowIndex="3" fx:id="mm" onMouseClicked="#onClick"/>
+            <Pane layoutX="10.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="nn" onMouseClicked="#onClick"/>
+            <Pane layoutX="56.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="oo" onMouseClicked="#onClick"/>
+            <Pane layoutX="102.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="pp" onMouseClicked="#onClick"/>
+            <Pane layoutX="148.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="3" fx:id="qq" onMouseClicked="#onClick"/>
+            <Pane layoutX="194.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="rr" onMouseClicked="#onClick"/>
+            <Pane layoutX="240.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="3" fx:id="ss" onMouseClicked="#onClick"/>
+            <Pane layoutX="286.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="3" fx:id="tt" onMouseClicked="#onClick"/>
+            <Pane layoutX="332.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="8" GridPane.rowIndex="3" fx:id="uu" onMouseClicked="#onClick"/>
+            <Pane layoutX="378.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="9" GridPane.rowIndex="3" fx:id="vv" onMouseClicked="#onClick"/>
+            <Pane layoutX="424.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="10" GridPane.rowIndex="3" fx:id="ww" onMouseClicked="#onClick"/>
+            <Pane layoutX="470.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="3" fx:id="xx" onMouseClicked="#onClick"/>
+            <Pane layoutX="516.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="3" fx:id="yy" onMouseClicked="#onClick"/>
+            <Pane layoutX="563.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red; -fx-border-color: black;" fx:id="zz" onMouseClicked="#onClick"/>
+            <fx:define>
+              <ArrayList fx:id="blocks">
+                <fx:reference source="aaa" />
+                <fx:reference source="a" />
+                <fx:reference source="b" />
+                <fx:reference source="c" />
+                <fx:reference source="d" />
+                <fx:reference source="e" />
+                <fx:reference source="f" />
+                <fx:reference source="g" />
+                <fx:reference source="h" />
+                <fx:reference source="i" />
+                <fx:reference source="j" />
+                <fx:reference source="k" />
+                <fx:reference source="l" />
+                <fx:reference source="m" />
+                <fx:reference source="n" />
+                <fx:reference source="o" />
+                <fx:reference source="p" />
+                <fx:reference source="q" />
+                <fx:reference source="s" />
+                <fx:reference source="t" />
+                <fx:reference source="u" />
+                <fx:reference source="v" />
+                <fx:reference source="w" />
+                <fx:reference source="x" />
+                <fx:reference source="y" />
+                <fx:reference source="z" />
+                <fx:reference source="aa" />
+                <fx:reference source="bb" />
+                <fx:reference source="cc" />
+                <fx:reference source="dd" />
+                <fx:reference source="ee" />
+                <fx:reference source="ff" />
+                <fx:reference source="gg" />
+                <fx:reference source="hh" />
+                <fx:reference source="ii" />
+                <fx:reference source="jj" />
+                <fx:reference source="kk" />
+                <fx:reference source="ll" />
+                <fx:reference source="mm" />
+                <fx:reference source="nn" />
+                <fx:reference source="oo" />
+                <fx:reference source="pp" />
+                <fx:reference source="qq" />
+                <fx:reference source="rr" />
+                <fx:reference source="ss" />
+                <fx:reference source="tt" />
+                <fx:reference source="uu" />
+                <fx:reference source="vv" />
+                <fx:reference source="ww" />
+                <fx:reference source="xx" />
+                <fx:reference source="yy" />
+                <fx:reference source="zz" />
+              </ArrayList>
+            </fx:define>
+         </children>
+      </GridPane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button layoutX="273.0" layoutY="88.0" mnemonicParsing="false" text="Start" onMouseClicked="#onStart" fx:id="start"/>
+            <Label layoutX="14.0" layoutY="14.0" text="Click on all of the red boxes to turn off the alarm." />
+            <Label layoutX="14.0" layoutY="31.0" text="Press the start button to begin." />
+            <Button disable="true" layoutX="274.0" layoutY="149.0" mnemonicParsing="false" text="Skip" fx:id="skip" onMouseClicked="#onSkip"/>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
+

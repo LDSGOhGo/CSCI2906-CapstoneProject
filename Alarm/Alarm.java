@@ -7,7 +7,7 @@ public class Alarm extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("Alarm.fxml"));
-		primaryStage.setTitle("Puzzle Alarm");
+		primaryStage.setTitle("Alarm");
 		primaryStage.setScene(new Scene(root));
 		primaryStage.show();
 	}
