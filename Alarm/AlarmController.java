@@ -87,7 +87,7 @@ public class AlarmController {
 			Platform.runLater(() -> {
 				String diff = difficulty.getValue().toString();
 				label1.setText("Alarm goes off");
-				if(diff.equals("Easy")) {
+				if(diff.equals("Shapes")) {
 					try {
 						Runtime.getRuntime().exec("java Puzzle");
 						Platform.exit();

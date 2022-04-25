@@ -63,12 +63,11 @@
       </items>
       </ChoiceBox>
       <Label layoutX="166.0" layoutY="257.0" text="Difficulty" fx:id="label5"/>
-      <ChoiceBox layoutX="226.0" layoutY="253.0" prefWidth="150.0" value="Easy" fx:id="difficulty">
+      <ChoiceBox layoutX="226.0" layoutY="253.0" prefWidth="150.0" value="Colors" fx:id="difficulty">
       <items>
          <FXCollections fx:factory="observableArrayList">
-            <String fx:value="Easy" />
-            <String fx:value="Medium" />
-            <String fx:value="Hard" />
+            <String fx:value="Shapes" />
+            <String fx:value="Colors" />
          </FXCollections>
       </items>
       </ChoiceBox>
