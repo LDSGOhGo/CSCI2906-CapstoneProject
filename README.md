@@ -8,7 +8,7 @@ An option to skip the puzzle will be presented if the user struggles too much wi
 To run the alarm sucessfully, the user should run the file ```Alarm.java```
 <img src="Run.png"/>
 
-##Code Example
+## Code Example
 This code generates random colors for each tile in a puzzle and saves the red ones to reference later
 ```@FXML
 	protected void onStart() {
